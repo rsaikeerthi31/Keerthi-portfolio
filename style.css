@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+:root {
+    --bg-main: #FAF7F2;
+    --bg-card: #F3ECE3;
+    --bg-pill: #E6D9CB;
+    --bg-project: #EEE4D9;
+    --text-main: #3E2F2F;
+    --text-muted: #7A5C5C;
+    --accent: #C2A083;
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.9;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 24px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 64px;
+}
+
+.role {
+    font-size: 22px;
+    color: var(--accent);
+}
+
+.about {
+    max-width: 800px;
+    margin: 24px auto;
+    color: var(--text-muted);
+}
+
+.content {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.card {
+    background: var(--bg-card);
+    padding: 48px;
+    border-radius: 22px;
+}
+
+.vertical-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+h2 {
+    border-bottom: 3px solid var(--accent);
+    margin-bottom: 28px;
+    font-size: 30px;
+}
+
+.skill-group {
+    margin-bottom: 32px;
+}
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.pills span {
+    background: var(--bg-pill);
+    padding: 8px 18px;
+    border-radius: 999px;
+}
+
+.project {
+    background: var(--bg-project);
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.highlight-cert {
+    background: var(--bg-project);
+    padding: 16px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
