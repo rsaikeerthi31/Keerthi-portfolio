@@ -8,8 +8,8 @@
 :root {
     --bg-main: #FAF7F2;
     --bg-card: #F3ECE3;
-    --bg-pill: #E6D9CB;
     --bg-project: #EEE4D9;
+    --bg-pill: #E6D9CB;
     --text-main: #3E2F2F;
     --text-muted: #7A5C5C;
     --accent: #C2A083;
@@ -35,6 +35,7 @@ body {
 
 .hero h1 {
     font-size: 64px;
+    margin-bottom: 12px;
 }
 
 .role {
@@ -66,13 +67,22 @@ body {
 }
 
 h2 {
-    border-bottom: 3px solid var(--accent);
-    margin-bottom: 28px;
     font-size: 30px;
+    margin-bottom: 28px;
+    border-bottom: 3px solid var(--accent);
+    display: inline-block;
+}
+
+.education-item {
+    margin-bottom: 26px;
+}
+
+.edu-meta {
+    color: var(--text-muted);
 }
 
 .skill-group {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
 }
 
 .pills {
@@ -94,11 +104,24 @@ h2 {
     margin-bottom: 24px;
 }
 
+.achievements {
+    padding-left: 22px;
+    margin-bottom: 20px;
+}
+
+.achievements li {
+    margin-bottom: 12px;
+    color: var(--text-muted);
+}
+
 .highlight-cert {
     background: var(--bg-project);
     padding: 16px;
     border-radius: 14px;
-    margin-bottom: 16px;
+}
+
+.highlight-cert span {
+    font-size: 16px;
 }
 
 a {
@@ -108,4 +131,14 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .card {
+        padding: 28px;
+    }
 }
